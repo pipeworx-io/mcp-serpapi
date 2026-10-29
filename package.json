@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-serpapi",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "SerpApi MCP — wraps SerpApi (serpapi.com) search engines",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-serpapi": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "serpapi"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-serpapi.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/serpapi",
   "pipeworx": {
-    "sourceHash": "v1-31f95057667ea895d4789390fd997aa7ee3f1921ce294030b17746acdd2617ca",
-    "sourceCommit": "d4a9636716f113458bd312e487c065f76548df8c"
+    "mode": "gateway",
+    "slug": "serpapi",
+    "gatewaySlug": "serpapi",
+    "sourceHash": "v1-f8fa77223f36bca880c6b22913767b0165dc35f7c480f7c31647b62c8c6d785f",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
