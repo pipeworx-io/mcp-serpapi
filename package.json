@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-serpapi",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "SerpApi MCP — wraps SerpApi (serpapi.com) search engines",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "serpapi",
     "gatewaySlug": "serpapi",
-    "sourceHash": "v1-f8fa77223f36bca880c6b22913767b0165dc35f7c480f7c31647b62c8c6d785f",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-e4a34eb8b50098d2ff2145e477678e49381f3570b1a2f8741263911c677c2400",
+    "sourceCommit": "8fc802aa5e23be625ce08d97178f5676c7bc93f3"
   }
 }
